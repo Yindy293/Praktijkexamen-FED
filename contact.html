@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <h1>Muziekschool H&J</h1>
+        <p><strong>Contact</strong></p>
+        <br>
+        <br>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="overons.html">Over ons</a></li>
+                <li><a href="tarieven.html">Tarieven</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="motivatie.html">Motivatie</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="left-column">
+            <h2 id="adresgegevens">Adresgegevens</h2>
+            <p>
+                Muziekschool H&J<br>
+                t.a.v Hannah en Jesse Industrieterrein 37<br>
+                5981 NK Panningen<br>
+                0123-456789<br>
+                muziekschoolhj@inlook.com
+            </p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2492.7499766082105!2d5.9781965!3d51.3341184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c7485bd60bbd61%3A0x73a8c69eb69bad56!2sNHA%20Opleidingen!5e0!3m2!1sen!2snl!4v1715900181628!5m2!1sen!2snl" id="map" width="330" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="right-column">
+            <h2 id="contact">Contact</h2>
+            <p><strong>U kunt een bericht achterlaten via onderstaand contactformulier:</strong></p><br>
+            <form>
+                <label for="firstname">Uw voornaam:</label>
+                <input type="text" id="firstname" name="firstname" placeholder="Uw voornaam">
+                <label for="lastname">Uw achternaam:</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Uw achternaam">
+                <label for="email">Uw e-mailadres:</label>
+                <input type="email" id="email" name="email" placeholder="Uw e-mailadres">
+                <label for="country">Land:</label>
+                <select id="country" name="country">
+                    <option value="netherlands">Nederland</option>
+                    <option value="netherlands">België</option>
+                    <option value="other">Anders</option>
+                </select>
+                <label for="message">Bericht:</label>
+                <textarea id="message" name="message" placeholder="Uw bericht hier"></textarea><br>
+                <input type="submit" value="Verzend">
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p id="footerText"><strong>© Copyright 2021 Muziekschool H&J<br>
+        (Dit is een oefenopdracht, alle informatie op deze website is fictief.)</strong></p>
+    </footer>
+</body>
+</html>

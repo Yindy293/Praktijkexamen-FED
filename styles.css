@@ -1,0 +1,209 @@
+body, html {
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    font-family: Arial, sans-serif;
+    font-weight: 100;
+    color: #000000;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    background-color: #ff8018;
+    padding: 10px; 
+    padding-bottom: 1px;
+    text-align: center;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 5px solid rgba(255, 255, 0, 0.655);
+    margin-bottom: 0; 
+}
+
+nav {
+    padding: 0;
+    margin: 0;
+    background-color: #ad4e14; 
+    width: 100%;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 1px;
+}
+
+nav ul li a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 7px;
+    font-size: 17px;
+}
+
+nav ul li a:hover {
+    background-color: #e76f00;
+}
+
+.content {
+    display: flex;
+    flex-wrap: nowrap; 
+    margin: 0; 
+}
+
+.left-column, .right-column {
+    padding: 20px;
+}
+
+.left-column {
+    flex: 0 0 30%; 
+    background-color: hsl(21, 70%, 70%);
+}
+
+.right-column {
+    flex: 1 1 80%;
+    background-color: white;
+    color: #333;
+}
+
+.right-column form {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.right-column input[type="text"],
+.right-column input[type="email"],
+.right-column select,
+.right-column textarea,
+.right-column input[type="submit"] {
+    width: 100%;
+    padding: 0px;
+    margin-bottom: 10px;
+}
+
+.right-column textarea {
+    height: 200px;
+    resize: vertical;
+}
+
+.right-column label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.right-column input[type="submit"] {
+    background-color: #ea6b1c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: auto;
+    padding: 10px 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+footer {
+    background-color: #c0560b;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position: static;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#footerText {
+    color: black;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+#trompet, #saxofoon2 {
+    width: 30%;
+    margin-left: 20px;
+}
+
+#fotoHannah {
+    width: 30%;
+    float: right;
+}
+
+#fotoJesse {
+    width: 30%;
+    float: left;
+}
+
+.left-column img, .right-column img {
+    width: auto; 
+    max-width: 100%;
+}
+
+#blog-data article h2 {
+    font-weight: 300; 
+}
+
+#welkomMuziekschool,
+#specialisatie,
+#hannahTitel,
+#JesseTitel,
+#voorwaardenTitel,
+#contact {
+    color: #c0560b;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center; 
+        margin-bottom: 15px; 
+    }
+
+    nav ul li a {
+        padding: 5px 10px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .left-column, .right-column {
+        flex: 1 1 100%;
+        padding: 10px;
+    }
+
+    .left-column img, .right-column img {
+        width: 100%; 
+    }
+
+    #saxofoon {
+        padding-left: 30px;
+        width: 90%;
+    }
+
+    #map {
+        padding-right: 50px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="motivational-quotes/static/css/main.d045cb52.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Motivatie - Muziekschool H&J</title>
+</head>
+<body>
+    <header>
+        <h1>Muziekschool H&J</h1>
+        <p><strong>Motivatie</strong></p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="overons.html">Over ons</a></li>
+                <li><a href="tarieven.html">Tarieven</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="motivatie.html">Motivatie</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="root"></div>
+    <footer>
+        <p id="footerText"><strong>© Copyright 2021 Muziekschool H&J<br>
+        (Dit is een oefenopdracht, alle informatie op deze website is fictief.)</strong></p>
+    </footer>
+
+    <script src="https://unpkg.com/react/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js" crossorigin></script>
+    <script src="motivational-quotes/build/static/js/main.3215740b.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            if (typeof App !== 'undefined') {
+                ReactDOM.render(React.createElement(App), document.getElementById('root'));
+            } else {
+                console.error('App is not defined');
+            }
+        });
+    </script>
+</body>
+</html>
